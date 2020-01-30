@@ -30,6 +30,8 @@ namespace Deliverable_2_Project
                 string LetterGrade = ("F");
 
                 //The following if else statements will display the corresponding lettergrade.
+
+                //A percent between 98 and 100 receives an A+
                 if (PercentGrade >= 98 && PercentGrade <= 100)
                 {
                     LetterGrade = ("A+");
@@ -37,6 +39,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 92 and 97 receives an A
                 else if (PercentGrade >= 92 && PercentGrade <= 97)
                 {
                     LetterGrade = ("A");
@@ -44,6 +48,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 90 and 91 receives an A-
                 else if (PercentGrade >= 90 && PercentGrade <= 91)
                 {
                     LetterGrade = ("A-");
@@ -51,6 +57,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 88 and 89 receives an B+
                 else if (PercentGrade >= 88 && PercentGrade <= 89)
                 {
                     LetterGrade = ("B+");
@@ -58,6 +66,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 82 and 87 receives an B
                 else if (PercentGrade >= 82 && PercentGrade <= 87)
                 {
                     LetterGrade = ("B");
@@ -65,6 +75,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 80 and 81 receives an B-
                 else if (PercentGrade >= 80 && PercentGrade <= 81)
                 {
                     LetterGrade = ("B-");
@@ -72,6 +84,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 78 and 79 receives an C+
                 else if (PercentGrade >= 78 && PercentGrade <= 79)
                 {
                     LetterGrade = ("C+");
@@ -79,6 +93,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 72 and 77 receives an C
                 else if (PercentGrade >= 72 && PercentGrade <= 77)
                 {
                     LetterGrade = ("C");
@@ -86,6 +102,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 70 and 71 receives an C-
                 else if (PercentGrade >= 70 && PercentGrade <= 71)
                 {
                     LetterGrade = ("C-");
@@ -93,6 +111,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 68 and 69 receives an D+
                 else if (PercentGrade >= 68 && PercentGrade <= 69)
                 {
                     LetterGrade = ("D+");
@@ -100,6 +120,8 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 62 and 67 receives an D
                 else if (PercentGrade >= 62 && PercentGrade <= 67)
                 {
                     LetterGrade = ("D");
@@ -107,13 +129,17 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 60 and 61 receives an D-
                 else if (PercentGrade >= 60 && PercentGrade <= 61)
                 {
-                    LetterGrade = ("D");
+                    LetterGrade = ("D-");
                     Console.WriteLine("This grade would give you an" + " " + (LetterGrade));
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
+
+                //A percent between 1 and 60 receives an F
                 else if (PercentGrade >= 1 && PercentGrade <= 60)
                 {
                     LetterGrade = ("F");
@@ -122,12 +148,16 @@ namespace Deliverable_2_Project
                     Console.WriteLine("Press any key to exit the program...");
                     Console.ReadKey(true);
                 }
-                else if (PercentGrade >= 200)
+
+                //Display error message if invalid grade is input
+                else if (PercentGrade > 100)
                 {
                     Console.WriteLine("Please use an integer value (1-100) for the grade you expect to receive");
                     Console.WriteLine("Press any key to exit the program and try again.");
                     Console.ReadKey(true);
                 }
+
+                //Display error message if invalid grade is input
                 else if (PercentGrade <= 0)
                 {
                     Console.WriteLine("Please use an integer value (1-100) for the grade you expect to receive");
